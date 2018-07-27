@@ -4,10 +4,15 @@ ul
 }
  .movie-card  a
  {
-      color: green;
+    color: green;
  }
  .movie-card  a:hover
  {
-     padding-bottom: 20px;
-      border-bottom: 1px solid green;
+    padding-bottom: 20px;
+    border-bottom: 1px solid green;
+ }
+/* Navbar */
+ #username{
+     color:white;
+     padding: 15px;
  }
