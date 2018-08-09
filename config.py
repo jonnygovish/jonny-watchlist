@@ -22,9 +22,9 @@ class Config:
 
 class ProdConfig(Config):
     # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://pupah@jony-watchlist:zanpakutou@jony-watchlist.postgres.database.azure.com/watchlist'
-    pass
-    
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://pupah@jony-watchlist:zanpakutou@jony-watchlist.postgres.database.azure.com/watchlist'
+    # pass
+
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://puppah:zanpakutou@localhost/watchlist_test'
 
