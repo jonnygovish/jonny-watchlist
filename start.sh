@@ -3,4 +3,4 @@ export SECRET_KEY=I love me
 export MAIL_USERNAME='jonnymutavi@gmail.com'
 export MAIL_PASSWORD='Hakunapassword'
 
-python3.6 manage.py server
+python3.6 manage.py server -h 0.0.0.0 -p 5000

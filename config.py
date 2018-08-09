@@ -21,14 +21,17 @@ class Config:
 
 
 class ProdConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-
+    # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://pupah@jony-watchlist:zanpakutou@jony-watchlist.postgres.database.azure.com/watchlist'
+    pass
+    
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://puppah:zanpakutou@localhost/watchlist_test'
 
 class DevConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://puppah:zanpakutou@localhost/watchlist'
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://puppah:zanpakutou@localhost/watchlist'
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://pupah@jony-watchlist:zanpakutou@jony-watchlist.postgres.database.azure.com/watchlist'
 
 config_options = {
 'development':DevConfig,
